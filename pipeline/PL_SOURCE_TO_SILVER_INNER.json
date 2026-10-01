@@ -254,7 +254,7 @@
 					},
 					"ifTrueActivities": [
 						{
-							"name": "Read WaterMark ",
+							"name": "Read WaterMark",
 							"type": "Lookup",
 							"dependsOn": [],
 							"policy": {
@@ -286,7 +286,7 @@
 							"type": "SetVariable",
 							"dependsOn": [
 								{
-									"activity": "Read WaterMark ",
+									"activity": "Read WaterMark",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -300,7 +300,7 @@
 							"typeProperties": {
 								"variableName": "watermark_value",
 								"value": {
-									"value": "@activity('Read WaterMark ').output.firstRow.watermark_value",
+									"value": "@activity('Read WaterMark').output.firstRow.watermark_value ",
 									"type": "Expression"
 								}
 							}
